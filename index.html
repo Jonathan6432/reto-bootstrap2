@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.bundle.js">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./prueba.css">
+    <title>Document</title>
+</head>
+<body class="bg-cuerpo my-5 mx-5">
+    <main class="container h-100 d-flex align-items-center py-5 px-5">
+        <article class="card border-0 rounded-3 overflow-hidden flex-md-row">
+            <!--flex-md-row == Cuado pase de 768px los elementos se posicionan en fila -->
+
+            <section class="col-img order-md-2 flex-md-shrink-1 flex-md-grow-1 w-100 ">
+                <!-- Order-md-2 Cuando pase de 768px la imagen se posiciona de segunda-->
+                <picture>
+                    <!----El elemento HTML <picture> es un contenedor usado para especificar múltiples elementos <source> y un elemento <img> contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.-->
+                    <source media="(max-width: 767px)" srcset="./imagenes/image-header-mobile.jpg">
+                    <source media="(min-width: 768px)" srcset="./imagenes/image-header-desktop.jpg">
+                    
+                    <img src="./imagenes/image-header-desktop.jpg" alt="imagen" class="card-img-top h-100">
+                  </picture>
+            </section>
+
+            <section class="col-text order-md-1 flex-md-shrink-1 flex-md-grow-1 w-100 border-0 ">
+                <!--- flex- grow-1 == las cajas crecen para llenar el espacio disponible con este valor crecen de forma proporcional, 2 el doble.
+                      .flex-shrink-1 == se ve obligado a envolver su contenido en una nueva línea , contraerse-->
+             <article class="card-body bg-texto text-white text-center text-md-start h-100 ">
+                <h1 class="fw-bolder py-md-2 px-md-2 pt-lg-5 px-lg-5 pb-xl-3">Get  <span class="CT-Morado"> insights </span> that help your business grow.</h1>
+                <p class="col-12 py-lg-3 py-md-2 px-md-2 px-lg-5 pb-xl-5">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency of data analytics and make better decisions efficiency. </p>
+                <article class="row py-lg-4 px-lg-5 py-xl-5">
+                    <section class="col-12 col-md-4 ">
+                        <h2 class="h5">10k+</h2>
+                        <p class="text-uppercase text-white-50">companies</p>
+                        <!--text-uppercase== texto pasa a mayusculas-->
+
+                    </section>
+                    <section class="col-12 col-md-4">
+                        <h2 class="h5">314</h2>
+                        <p class="text-uppercase text-white-50">templates</p>
+                        <!--text-uppercase== texto pasa a mayusculas-->
+
+                    </section>
+                    <section class="col-12 col-md-4">
+                        <h2 class="h5">12M+</h2>
+                        <p class="text-uppercase text-white-50">queries</p>
+                        <!--text-uppercase== texto pasa a mayusculas-->
+
+                    </section>
+
+                </article>
+             </article>
+            </section>
+        
+
+        </article>
+
+        
+        
+
+    </main>
+</body>
+</html>
